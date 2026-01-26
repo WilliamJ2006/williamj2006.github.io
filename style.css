@@ -1,0 +1,400 @@
+:root {
+    --header-color: #B9D8E1;
+    --border-color: #96CDEE;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: var(--border-color);
+    font-family: 'Quicksand', 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+#home,
+#about,
+#projects,
+#contact {
+    scroll-margin-top: 80px;
+}
+
+header {
+    top: 0;
+    position: sticky;
+    padding: 10px 30px;
+    color: var(--border-color);
+    background-color: white;
+    border-bottom: 2px solid lightblue;
+    opacity: .98;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.section-links {
+    gap: 15px;
+    display: flex;
+}
+
+.section-links a {
+    color: gray;
+}
+
+.section-links a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 2.0rem;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+#home {
+    text-align: center;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.buttons a {
+    border-radius: 8px;
+    padding: 10px 15px;
+    min-width: 150px;
+    font-weight: bolder;
+}
+
+.see-projects {
+    color: white;
+    background-color: #629BB4;
+    border: none;
+}
+
+.contact-me {
+    color: #629BB4;
+    border: 2px solid #629BB4;
+    background-color: white;
+}
+
+.buttons a:hover {
+    background-color: #447F98;
+    color: white;
+    border-color: #447F98;
+}
+
+footer {
+    padding: 20px 30px;
+    background-color: white;;
+    border-top: 2px solid lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-skills {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skill-list button {
+    border-radius: 20px;
+    padding: 10px;
+    min-width: 100px;
+    margin: 5px;
+    pointer-events: none;
+    color: black;
+    border: none;
+    font-family: 'Quicksand', 'Poppins', Arial, sans-serif;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 30px;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 350px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills h3 {
+    padding-left: 8px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    gap: 15px;
+}
+
+.project-list li {
+    display: flex;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: stretch;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid cornflowerblue;
+    border-radius: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 20px;
+    height: 100%;
+}
+
+.project-info img {
+    border-radius: 4px;
+    height: 250px;
+}
+
+.skills-applied {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.skills-applied p {
+    background-color: #DADEE1;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: .8rem;
+    font-weight: lighter;
+}
+
+.web-links {
+    display: flex;
+    gap: 15px;
+}
+
+.web-links a {
+    color: #629BB4;
+}
+
+.web-links a:hover {
+    color: #447F98;
+    text-decoration: underline;
+}
+
+.project-list figcaption {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.about-me,
+.form-name {
+    font-size: 2.0rem;
+}
+
+.my-projects {
+    font-size: 2.2rem;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    gap: 15px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-text {
+    max-width: 500px;
+}
+
+.form-info {
+    display: flex;
+    gap: 30px;
+}
+
+.fill-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 450px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.gmail a img,
+.linkedin a img,
+.github a img {
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 5px;
+}
+
+.gmail a,
+.linkedin a,
+.github a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-field input,
+.form-field textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Quicksand', 'Poppins', Arial, sans-serif;
+    width: 100%;
+}
+
+.form-field textarea {
+    height: 200px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts a {
+    color: gray;
+}
+
+.contacts a:hover {
+    color: black;
+}
+
+.submit-button {
+    border: none;
+    border-radius: 8px;
+    background-color: #1cbb54;
+    height: 50px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.submit-button:hover {
+    background-color: darkgreen;
+}
+
+
+@media (max-width: 768px) {
+    .fill-form {
+        width: 100%;
+    }
+
+    .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-skills {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .project-info img {
+        height: 200px;
+    }
+
+    .form-info {
+        flex-direction: column;
+    }
+}
