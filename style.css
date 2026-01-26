@@ -18,7 +18,8 @@ ul {
 }
 
 body {
-    background-color: #E3F9F9;
+    /* background-color: #E3F9F9; */
+    background-color: lightcyan;
     font-family: 'Quicksand', 'Poppins', Arial, sans-serif;
     line-height: 1.6;
 }
