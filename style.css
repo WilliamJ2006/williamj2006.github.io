@@ -445,7 +445,7 @@ form {
 
 .contacts a:hover {
     color: var(--text-black);
-    transform: translateX(+2px);
+    transform: translateX(5px);
 }
 
 .gmail a img,
