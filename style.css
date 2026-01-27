@@ -485,7 +485,7 @@ footer {
 }
 
 
-/* RESPONSIVE (MOBILE) */
+/* MEDIA QUERIES (DESKTOP VIEW) */
 @media (min-width: 768px) {
     .skill-list {
         display: grid;
