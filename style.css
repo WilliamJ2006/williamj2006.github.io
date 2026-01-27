@@ -386,7 +386,6 @@ form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 450px;
     width: 100%;
 }
 
@@ -446,7 +445,7 @@ form {
 
 .contacts a:hover {
     color: var(--text-black);
-    transform: translateX(+2px);
+    transform: translateX(5px);
 }
 
 .gmail a img,
@@ -507,5 +506,9 @@ footer {
 
     .form-info {
         flex-direction: row;
+    }
+
+    .fill-form {
+        width: 450px;
     }
 }
