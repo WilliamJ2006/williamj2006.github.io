@@ -61,7 +61,7 @@ footer {
   padding: 20px;
 }
 
-#container {
+.container {
   background-color: var(--color-background);
   border-style: solid;
   border-color: var(--color-border);
