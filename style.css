@@ -44,7 +44,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation: bgFadeIn 1.5s ease forwards;
+    animation: bgFadeIn 1s ease forwards;
     font-family: monospace, 'Quicksand', 'Poppins', Arial, sans-serif;
     line-height: 1.6;
 }
@@ -136,6 +136,7 @@ main {
     flex-direction: column;
     gap: 40px;
     width: 100%;
+    animation: FadeUp 5s ease;
 }
 
 
@@ -512,9 +513,22 @@ footer {
 @keyframes bgFadeIn {
     from {
         opacity: 0;
+        transform: translateY(-20px);
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes FadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
 
