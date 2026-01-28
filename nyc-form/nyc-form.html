@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <section id="container">
         <div class="go-back">
             <a href="https://williamj2006.github.io/#projects">← Go Back</a>
         </div>
@@ -38,12 +38,12 @@
                 <div class="form-row">
                     <div class="form-field">
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email" required />
+                        <input type="email" id="email" name="email" required />
                     </div>
 
                     <div class="form-field">
                         <label for="ticket-count">Number of Tickets</label>
-                        <input type="number" id="ticket-count" name="ticket-count" required />
+                        <input type="number" id="ticket-count" name="ticket-count" min="1" max="10" required />
                     </div>
                 </div>
 
@@ -110,7 +110,7 @@
         <footer>
             <p>Copyright © 2026 NYC Tech Summit</p>
         </footer>
-    </div>
+    </section>
 </body>
 
 </html>
