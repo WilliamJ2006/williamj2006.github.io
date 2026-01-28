@@ -1,9 +1,7 @@
-/* CSS VARIABLES (COLORS) */
+/* VARIABLES AND ROOT */
 :root {
-    --header-color: #B9D8E1;
     --border-color: #96CDEE;
 
-    --bg-main: lightcyan;
     --bg-white: white;
     --bg-whitesmoke: whitesmoke;
 
@@ -28,6 +26,7 @@
 /* GLOBAL RESET & BASE */
 html {
     scroll-behavior: smooth;
+    min-height: 100%;
 }
 
 * {
@@ -41,13 +40,20 @@ ul {
 }
 
 body {
-    background-color: var(--bg-main);
-    font-family: 'Quicksand', 'Poppins', Arial, sans-serif;
+    background: linear-gradient(90deg,rgb(198, 222, 229) 0%, rgb(197, 203, 211) 0%, rgb(111, 164, 214) 100%);
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: bgFadeIn 1.5s ease forwards;
+    font-family: monospace, 'Quicksand', 'Poppins', Arial, sans-serif;
     line-height: 1.6;
+    min-height: 100%;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.0rem;
+    font-family: cursive, sans-serif;
 }
 
 img {
@@ -196,8 +202,19 @@ main {
     margin: 0 auto;
     max-width: 1000px;
     min-height: 350px;
-    background-color: var(--bg-white);
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.description {
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .about-skills {
@@ -283,6 +300,12 @@ main {
     gap: 20px;
     height: 100%;
     transition: 0.5s ease;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .project-info:hover {
@@ -316,11 +339,12 @@ main {
 
 .web-links {
     display: flex;
-    gap: 15px;
+    gap: 25px;
 }
 
 .web-links a {
-    color: var(--text-gray);
+    color: var(--text-white);
+    font-weight: bold;
     transition: color 0.3s ease;
     position: relative;
 }
@@ -350,20 +374,13 @@ main {
     max-width: 1000px;
     width: 100%;
     gap: 15px;
-    background-color: var(--bg-white);
+    background-color: var(--bg-whitesmoke);
     border-radius: 8px;
     padding: 40px;
 }
 
 .form-name {
     font-size: 2.0rem;
-}
-
-.description {
-    font-size: .9rem;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 form {
@@ -399,9 +416,10 @@ form {
 .form-field textarea {
     padding: 10px;
     border: 1px solid var(--input-border);
-    border-radius: 4px;
     font-family: 'Quicksand', 'Poppins', Arial, sans-serif;
     width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .form-field textarea {
@@ -416,7 +434,8 @@ form {
     font-size: 1rem;
     color: var(--text-white);
     font-weight: bolder;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    transition: 0.2s ease;
+    font-family: monospace, 'Quicksand', 'Poppins', Arial, sans-serif;;
 }
 
 .submit-button:hover {
@@ -427,6 +446,10 @@ form {
 
 
 /* CONTACT LINKS */
+.form-text {
+    font-size: .96rem;
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -441,6 +464,7 @@ form {
 
 .contacts a {
     color: var(--text-gray);
+    font-size: .9rem;
 }
 
 .contacts a:hover {
@@ -474,6 +498,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: .9rem;
 }
 
 
@@ -481,6 +506,17 @@ footer {
 .section-links a:hover::after,
 .web-links a:hover::after {
     width: 100%;
+}
+
+
+/* KEY FRAMES */
+@keyframes bgFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
