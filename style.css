@@ -136,7 +136,7 @@ main {
     flex-direction: column;
     gap: 40px;
     width: 100%;
-    animation: FadeUp 5s ease;
+    animation: FadeUp 6s ease;
 }
 
 
