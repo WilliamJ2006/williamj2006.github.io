@@ -40,7 +40,6 @@ ul {
 
 body {
     background: linear-gradient(90deg,rgb(198, 222, 229) 0%, rgb(197, 203, 211) 0%, rgb(111, 164, 214) 100%);
-    backdrop-filter: blur(5px);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -205,8 +204,6 @@ main {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -293,7 +290,6 @@ main {
     flex-direction: column;
     background-color: var(--bg-white);
     border: 2px solid var(--accent-border);
-    border-radius: 8px;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 20px;
@@ -303,8 +299,6 @@ main {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -439,7 +433,7 @@ form {
     color: var(--text-white);
     font-weight: bolder;
     transition: 0.2s ease;
-    font-family: monospace, 'Quicksand', 'Poppins', Arial, sans-serif;;
+    font-family: monospace, 'Quicksand', 'Poppins', Arial, sans-serif;
 }
 
 .submit-button:hover {
