@@ -136,6 +136,7 @@ main {
     flex-direction: column;
     gap: 40px;
     width: 100%;
+    animation: FadeUp 2s ease;
 }
 
 
@@ -515,6 +516,17 @@ footer {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes FadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
 
