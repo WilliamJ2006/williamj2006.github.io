@@ -83,6 +83,7 @@ header {
     color: var(--border-color);
     background-color: var(--bg-whitesmoke);
     border-bottom: 2px solid var(--accent-lightblue);
+    font-family: 'Quicksand', 'Poppins', Arial, sans-serif;
     opacity: .98;
 }
 
