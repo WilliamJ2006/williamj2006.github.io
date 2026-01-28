@@ -412,6 +412,10 @@ form {
     gap: 5px;
 }
 
+.form-field label {
+    padding-left: 7px;
+}
+
 .form-field input,
 .form-field textarea {
     padding: 10px;
