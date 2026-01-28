@@ -26,7 +26,6 @@
 /* GLOBAL RESET & BASE */
 html {
     scroll-behavior: smooth;
-    min-height: 100%;
 }
 
 * {
@@ -48,7 +47,6 @@ body {
     animation: bgFadeIn 1.5s ease forwards;
     font-family: monospace, 'Quicksand', 'Poppins', Arial, sans-serif;
     line-height: 1.6;
-    min-height: 100%;
 }
 
 h1 {
