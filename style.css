@@ -1,9 +1,7 @@
-/* CSS VARIABLES (COLORS) */
+/* VARIABLES AND ROOT */
 :root {
-    --header-color: #B9D8E1;
     --border-color: #96CDEE;
 
-    --bg-main: lightcyan;
     --bg-white: white;
     --bg-whitesmoke: whitesmoke;
 
@@ -42,13 +40,7 @@ ul {
 }
 
 body {
-    /* background-image: url("img/background-img.jpg"); */
-    /* background-color: rgba(50, 112, 182, 0.661);
-    background: #2A7B9B; */
-    /* background-color: aliceblue; */
     background: linear-gradient(90deg,rgb(198, 222, 229) 0%, rgb(197, 203, 211) 0%, rgb(111, 164, 214) 100%);
-    /* background: #38339f;
-    background: linear-gradient(90deg,rgb(58, 170, 88) 0%, rgba(67, 67, 169, 0.64) 0%, rgba(0, 212, 255, 1) 100%); */
     backdrop-filter: blur(5px);
     background-repeat: no-repeat;
     background-size: cover;
@@ -351,7 +343,7 @@ main {
 }
 
 .web-links a {
-    color: white;
+    color: var(--text-white);
     font-weight: bold;
     transition: color 0.3s ease;
     position: relative;
@@ -382,7 +374,7 @@ main {
     max-width: 1000px;
     width: 100%;
     gap: 15px;
-    background-color: whitesmoke;
+    background-color: var(--bg-whitesmoke);
     border-radius: 8px;
     padding: 40px;
 }
@@ -443,6 +435,7 @@ form {
     color: var(--text-white);
     font-weight: bolder;
     transition: 0.2s ease;
+    font-family: monospace, 'Quicksand', 'Poppins', Arial, sans-serif;;
 }
 
 .submit-button:hover {
@@ -453,6 +446,10 @@ form {
 
 
 /* CONTACT LINKS */
+.form-text {
+    font-size: .96rem;
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -467,6 +464,7 @@ form {
 
 .contacts a {
     color: var(--text-gray);
+    font-size: .9rem;
 }
 
 .contacts a:hover {
